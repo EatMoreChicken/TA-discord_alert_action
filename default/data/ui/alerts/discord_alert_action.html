@@ -1,0 +1,31 @@
+<form class="form-horizontal form-complex">
+  <h1>Discord Alert Action Configuration</h1>
+
+  <div class="control-group">
+    <label class="control-label" for="webhook_url">Discord Webhook URL:</label>
+    <div class="controls">
+      <input type="text" class="input-xlarge" name="action.discord_alert_action.param.webhook_url" id="webhook_url" placeholder="Discord Webhook URL" />
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="field_names">Fields to Send (comma-separated):</label>
+    <div class="controls">
+      <textarea id="field_names" name="action.discord_alert_action.param.field_names" class="shared-controls-textarea" placeholder="Fields to send, e.g. username,hostname"></textarea>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Documentation:</label>
+    <div class="controls">
+      <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks">How to generate a webhook URL in Discord</a>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="controls">
+      <p><strong>Note:</strong> The maximum message length currently supported is "2000" characters.</p>
+      <p><strong>Note:</strong> Please use the "Trigger For each result" option for this alert action.</p>
+    </div>
+  </div>
+</form>
