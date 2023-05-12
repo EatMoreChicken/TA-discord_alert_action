@@ -12,10 +12,15 @@ To use this app, you need a Discord webhook URL. To create a webhook URL for you
 ## Installation and Configuration
 1. Download the app package and install it in your Splunk instance.
 2. Follow Discord's documentation to generate a webhook for a channel ([Discord documentation](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)).
-3. Create or edit an alert to add the Discord Alert action. Be sure to populate the webhook URL and the fields you would like sent to Discord from your search (supports wildcards).
+3. Create or edit an alert to add the Discord Alert action. Be sure to populate the `Discord Webhook URL` and `Fields to Send` (Note: _Supports wildcards and should be comma-separated_) with fields you would like sent to Discord from your search.
+
+> Note: The maximum message length currently supported is "2000" characters.
+> Note: Please consider using the `For each result` trigger option for your alert.
 
 ## To-Do
 - [ ] Update script to use Splunk's built-in logging.
+- [ ] Fine tune max message length. It should be higher than 2000 characters.
+- [ ] Look into getting trigger option `Once` to include all results instead of just the first.
 
 ## Support
 This is an open-source project, no support provided, public repository available. Please feel free to contribute to this project by creating pull requests, filing bug reports, or providing feedback. Thank you!
