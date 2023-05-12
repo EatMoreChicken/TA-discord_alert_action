@@ -22,6 +22,7 @@ To use this app, you need a Discord webhook URL. To create a webhook URL for you
 - [ ] Update script to use Splunk's built-in logging.
 - [ ] Fine tune max message length. It should be higher than 2000 characters.
 - [ ] Look into getting trigger option `Once` to include all results instead of just the first.
+- [ ] **Priority** AppInspect can't see the icons (`static/appIcon.png`, `static/appIcon.png`, `static/appIcon_2x.png`, `static/appIcon_2x.png`).
 
 ## 🤝 Support
 This is an open-source project, no support provided, public repository available. Please feel free to contribute to this project by creating pull requests, filing bug reports, or providing feedback. Thank you!
